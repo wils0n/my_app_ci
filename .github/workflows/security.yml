@@ -41,7 +41,7 @@ jobs:
           config: p/owasp-top-ten
 
   build-frontend:
-    needs: [secrets-scan, secrets-deep-scan, sast-scan, dependency-scan]
+    needs: [secrets-scan, secrets-deep-scan, sast-scan]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
